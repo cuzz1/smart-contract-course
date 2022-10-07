@@ -63,6 +63,31 @@ contract SimpleStorage {
 - Scope
 - View & Pure Functions
 
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.8; 
+
+contract SimpleStorage {
+
+    uint256 public favoriateNumber;
+
+    // function
+    function store(uint256 _favoriteNumber) public {
+        favoriateNumber = _favoriteNumber;
+    } 
+
+    function retriveve() public view returns(uint256) {
+        return favoriateNumber;
+    }
+
+    function add() public pure returns(uint256) {
+        return (1 + 1);
+    }
+
+}
+
+```
 ## Basic Solidity: Arrays & Structs
 
 - Structs
@@ -70,6 +95,37 @@ contract SimpleStorage {
 - Arrays
 - Dynamic & Fixed Sized
 - `push` array function
+
+```solidity
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.8; 
+
+contract SimpleStorage {
+
+    uint256 favoriateNumber;
+
+    People public person = People(
+        {
+            name: "cuzz",
+            favoriateNumber: 1
+        }
+    );
+
+    People[] public people;
+
+    struct People {
+        string name;
+        uint256 favoriateNumber;
+    }
+    
+    function addPerson(string memory _name, uint256 _favoriateNumber) public {
+        people.push(People(_name,_favoriateNumber));
+    }
+
+}
+
+```
 
 ## Basic Solidity: Compiler Errors and Warnings
 
