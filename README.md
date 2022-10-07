@@ -10,6 +10,7 @@
   - [Chain Link](https://faucets.chain.link/) 获取领水
 - [Blockchain Demo Block](https://andersbrownworth.com/blockchain/block) 区块链生成演示
 - [Blockchain Demo Keys](https://andersbrownworth.com/blockchain/public-private-keys/keys) 秘钥
+- [Remix](https://remix.ethereum.org/) 智能合约编辑器
 
 ## Resource
 
