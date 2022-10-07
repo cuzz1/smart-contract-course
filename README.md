@@ -1,5 +1,80 @@
 # Smart Contract Course
 
+## Lesson 0: The Edge of the Rabbit Hole
+
+## Lesson 1: Blockchain Basics
+
+## Lesson 2: Welcome to Remix! Simple Storage
+
+### Introduction
+
+- [Remix](https://remix.ethereum.org/)
+- [Solidity Documentation](https://docs.soliditylang.org/en/latest/index.html)
+
+### Setting Up Your First Contract
+
+- Versioning
+- Take notes in your code!
+- [What is a software license](https://snyk.io/learn/what-is-a-software-license/)
+- SPDX License
+- Compiling
+- Contract Declaration
+
+### Basic Solidity: Types
+
+- [Types & Declaring Variables](https://docs.soliditylang.org/en/latest/)
+  - `uint256`, `int256`, `bool`, `string`, `address`, `bytes32`
+  - [Solidity Types](https://docs.soliditylang.org/en/latest/types.html)
+  - [Bits and Bytes](https://www.youtube.com/watch?v=Dnd28lQHquU)
+- Default Initializations
+- Comments
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+
+pragma solidity ^0.8.8; 
+
+contract SimpleStorage {
+    // boolean, uint, int, address, bytes
+    bool hasFavoriateNumber = false;
+    
+    uint favoriateNumberUint = 123;
+    string favoriateNumberInText = "Five";
+    address myAdress = 0xF6CF8e675fF7e8e1C7599209771ccE9CD28427cD;
+    bytes32 favoriateBytes = "cat";
+
+    // This gets initialized to zero!
+    // public visible externally and internally
+    uint256 public favoriateNumber;
+
+}
+
+```
+
+## Basic Solidity: Functions
+
+- Functions
+- Deploying a Contract
+  - Smart Contracts have addresses just like our wallets
+- Calling a public state-changing Function
+- [Visibility](https://docs.soliditylang.org/en/latest/contracts.html#visibility-and-getters)
+- Gas III | An example
+- Scope
+- View & Pure Functions
+
+## Basic Solidity: Arrays & Structs
+
+- Structs
+- Intro to Storage
+- Arrays
+- Dynamic & Fixed Sized
+- `push` array function
+
+## Basic Solidity: Compiler Errors and Warnings
+
+- Yellow: Warnings are Ok
+- Red: Errors are not Ok
 
 ## Site
 
@@ -11,6 +86,7 @@
 - [Blockchain Demo Block](https://andersbrownworth.com/blockchain/block) 区块链生成演示
 - [Blockchain Demo Keys](https://andersbrownworth.com/blockchain/public-private-keys/keys) 秘钥
 - [Remix](https://remix.ethereum.org/) 智能合约编辑器
+- [Solidity Documentation](https://docs.soliditylang.org/en/latest/index.html) Solidity 文档
 
 ## Resource
 
